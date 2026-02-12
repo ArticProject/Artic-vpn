@@ -3,7 +3,7 @@
         android:label="Arctic VPN"
         android:icon="@mipmap/ic_launcher">
         <activity
-            android:name=".MainActivity"
+            android:name="${applicationName}"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
@@ -15,5 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <meta-data
+    android:name="flutterEmbedding"
+    android:value="2" />
     </application>
 </manifest>
